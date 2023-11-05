@@ -1,5 +1,5 @@
 let dataview = document.querySelector(".data-view")
-
+// quiz aray questions
 let quizData = [
     {
         question: 'which css property is used to display items on a row',
@@ -17,24 +17,24 @@ let quizData = [
         answer: "const",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'what continent is Nigeria located',
+        options: ["asia", "europe", "africa", "ghana"],
+        answer: "africa",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'what is the name of the capital of nigeria',
+        options: ["lagos", "abuja", "imo"],
+        answer: "abuja",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'what is the name of the president of nigeria',
+        options: ["tinubu", "obi", "atiku"],
+        answer: "tinubu",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'which currency does nigeria use',
+        options: ["euro", "dollar", "naira"],
+        answer: "naira",
     },
     {
         question: 'what keyword is used for a non reassignable value in javascript',
@@ -52,7 +52,7 @@ let quizData = [
         answer: "const",
     },
 ]
-
+// quiz app function
 function quizApp(){
     let wrong = 0;
     let corrects = 10;
