@@ -59,11 +59,11 @@ function quizApp(){
     let result = 0;
     let quizArray = quizData.map((quiz, index) => {
         return `
-                <div class="row my-3 py-2 px-5 ">
+                <div class=" my-3 py-2 px-5 ">
                     <div class="left">
-                        <p class="col-1 px-3 text-white">${index +1}.
-                         <p class="question px-5 text-white">${quiz.question}</p>
-                        <select name="" id="" class="w-100 px-5 py-2 bg-success px-5">
+                        <p class="col-1 px-1 text-white">${index +1}.
+                         <p class="question px-3 text-white">${quiz.question}</p>
+                        <select name="" id="" class="w-100 px-3 py-2 bg-success px-5">
                             <option>select an answer</option>
                             ${quiz.options.map((option) => {
                                 return `
