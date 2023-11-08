@@ -17,39 +17,39 @@ let quizData = [
         answer: "const",
     },
     {
-        question: 'what continent is Nigeria located',
-        options: ["asia", "europe", "africa", "ghana"],
-        answer: "africa",
+        question: 'how do you call a function in javascript',
+        options: ["()function", "function", "function name()", "functionName()"],
+        answer: "functionName()",
     },
     {
-        question: 'what is the name of the capital of nigeria',
-        options: ["lagos", "abuja", "imo"],
-        answer: "abuja",
+        question: 'is bootsrtap a javascript libry',
+        options: ["yes", "yes & no", "no"],
+        answer: "no",
     },
     {
-        question: 'what is the name of the president of nigeria',
-        options: ["tinubu", "obi", "atiku"],
+        question: 'which tag is used to link a stylesheet to a html header',
+        options: ["style", "link", "file"],
         answer: "tinubu",
     },
     {
-        question: 'which currency does nigeria use',
-        options: ["euro", "dollar", "naira"],
-        answer: "naira",
+        question: 'which represent increment in EcmaScript',
+        options: ["+", "++", "+++"],
+        answer: "++",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'Is CSS a programming language',
+        options: ["Yes", "Maybe", "No", "i dont know"],
+        answer: "No",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'which HTML tag is used to link a javascript file',
+        options: ["link", "script", "file"],
+        answer: "script",
     },
     {
-        question: 'what keyword is used for a non reassignable value in javascript',
-        options: ["var", "let", "const"],
-        answer: "const",
+        question: 'which of these is a javascript libry',
+        options: ["React.js", "Angular", "React.js & Angular"],
+        answer: "React.js & Angular",
     },
 ]
 // quiz app function
@@ -61,9 +61,9 @@ function quizApp(){
         return `
                 <div class=" my-3 py-2 px-5 ">
                     <div class="left">
-                        <p class="col-1 px-1 text-white">${index +1}.
-                         <p class="question px-3 text-white">${quiz.question}</p>
-                        <select name="" id="" class="w-100 px-3 py-2 bg-success px-5">
+                        <p class="col-1 text-white">${index +1}.
+                         <p class="question px-2 text-white">${quiz.question}</p>
+                        <select name="" id="" class="w-100 py-2 bg-white px-5">
                             <option>select an answer</option>
                             ${quiz.options.map((option) => {
                                 return `
@@ -99,7 +99,7 @@ function quizApp(){
             if(quizData[index].answer === selectValue){
                 document.querySelectorAll(".status")[index].innerHTML = `status: correct`;
                 result += corrects;
-                document.querySelector(".result").innerHTML = `Total: ${result}/150`
+                document.querySelector(".result").innerHTML = `Total: ${result}/100`
                 console.log(result)
                 // document.querySelectorAll('.total_sum').innerHTML = `Total: ${totals}/100`
             }
