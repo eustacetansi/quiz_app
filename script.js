@@ -29,7 +29,7 @@ let quizData = [
     {
         question: 'which tag is used to link a stylesheet to a html header',
         options: ["style", "link", "file"],
-        answer: "tinubu",
+        answer: "link",
     },
     {
         question: 'which represent increment in EcmaScript',
